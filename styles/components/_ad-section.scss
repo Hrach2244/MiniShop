@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.ad-section {
+    background-color: var(--ad-background);
+   
+    &__info {
+        @extend %h5-tpg;
+        color: var(--basic-color-2);
+        font-family: 'Jost', sans-serif;
+    }
+
+    
+}

@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use './grid' as *;
+
+.mobile-product-list {
+    margin: crem(20px) 0 crem(50px) 0;
+
+    @extend %grid-col-4;
+
+    &__item {
+        grid-column: span 1;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: crem(10px);
+    }
+
+    &__value {
+        display: inline-block;
+    }
+
+    @include mq(phone) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: crem(50px);
+    }
+}
+
+.mobile-products {
+    max-width: var(--sections-maxwidth);
+
+    &__slider {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

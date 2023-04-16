@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.mobile-product-list {
+    &__info {
+        @extend %h6-tpg;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-family: 'Jost', sans-serif;
+    }
+
+    &__value {
+        color: var(--basic-color);
+    }
+}

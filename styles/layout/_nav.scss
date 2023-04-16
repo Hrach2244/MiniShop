@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+@use '../base/' as *;
+ 
+.nav {
+    display: flex;
+    gap: map-get($spc, "h4");
+    padding: crem(17.5px);
+
+    &__list {
+        display: flex;
+    }
+
+    &__shop-tools-list {
+        display: flex;
+    }
+}

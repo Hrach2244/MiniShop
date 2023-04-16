@@ -1,0 +1,28 @@
+@use 'sass:math';
+@use './var' as *;
+
+@function round($value, $fraction: 0) {
+    $power: math.pow(10, $fraction);
+
+    @return math.div(math.round($power * $value), $power);
+}
+
+@function strip-unit($number) {
+    @if type-of($number)=='number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function crem($size) {
+    $res: strip-unit(calc($size / $rem-size));
+
+    @return round($res, 3) * 1rem;
+}
+
+@function cem($size, $base-size: $rem-size) {
+    $res: strip-unit(calc($size / $base-size));
+
+    @return round($res, 3) * 1em;
+}

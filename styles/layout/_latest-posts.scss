@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use './grid' as *;
+
+.latest-posts {
+    max-width: var(--sections-maxwidth);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 1em;
+    }
+
+    @include mq(phone) {
+        &__header {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+.latest-posts-list {
+    @extend %grid-col-3;
+
+    &__item {
+        grid-column: span 1;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__desc {
+        margin: cem(14px, map-get($tpg, "p4")) 0 cem(6px, map-get($tpg, "p4")) 0;
+    }
+
+    @include mq(phone) {
+        grid-template-columns: 1fr 1fr;
+
+
+        &__item {
+            grid-column: span 2;
+            margin: 0 auto;
+            width: 70%;
+            margin-bottom: 30px;
+        }
+    }
+}

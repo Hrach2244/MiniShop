@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.left-right-chevrons {
+    &__left {
+        @extend %h1-tpg;
+        color: var(--basic-color); 
+    }
+
+    &__right {
+        @extend %h1-tpg;
+        color: var(--basic-color); 
+    }
+}

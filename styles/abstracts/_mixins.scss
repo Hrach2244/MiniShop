@@ -1,0 +1,17 @@
+@use './var' as *;
+
+
+@mixin mq($bp, $type: max) {
+    @if map_has_key($breakpoints, $bp) {
+        $width: map_get($breakpoints, $bp);
+
+        @if $type ==max {
+            // 0.0625em = 1px
+            $width: $width - 0.0625em;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.title {
+    @extend %h5-tpg;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.06em;
+}

@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.subscribe {
+    background-color: #272727;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    font-family: 'Lato', sans-serif;
+    @extend %p2-tpg;
+
+    &__title {
+        @extend %h5-tpg;
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: cem(10px, map-get($tpg, "h5"));
+    }
+
+    &__input {
+        font: inherit;
+    }
+}

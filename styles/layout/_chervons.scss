@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.left-right-chevrons {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    &__left {
+        position: absolute;
+        left: 0;
+        transform: translateX(crem(20px));
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+        margin-right: crem(20px);
+    } 
+}

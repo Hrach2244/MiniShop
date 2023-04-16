@@ -1,0 +1,19 @@
+$rem-size: 16px;
+
+$breakpoints: (
+    // 845px
+    "phone": 52.8125em,
+    // 950px
+    "lgPhone": 59.375em,
+    // 1180px
+    "tablet":73.75em,
+    // 1450px
+    "desktop": 90.625em,
+);
+
+:root {
+    --basic-color: #72AEC8;
+    --basic-color-2: #272727;
+    --ad-background: #EDF1F3;
+    --sections-maxwidth: 75vw;
+}

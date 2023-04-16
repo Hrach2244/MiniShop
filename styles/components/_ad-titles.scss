@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.ad-titles {
+    @extend %h1-tpg;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}

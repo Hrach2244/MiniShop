@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.logo {
+    @extend %h4-tpg;
+    font-family: 'Jost', sans-serif;
+    color: var(--basic-color-2);
+}
+
+@include mq(phone) {
+    .logo {
+        color: #fff;
+        padding-left: 0.5em;
+    }
+}

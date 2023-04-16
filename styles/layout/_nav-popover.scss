@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.nav-panel {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__label {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    &__shop-list {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.popover-input:checked+.nav-panel {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.popover-input:checked+.nav-panel .nav-panel__label {
+    display: block;
+}
+
+.popover-input {
+    display: none;
+}
+
+@include mq(tablet) {
+    .nav-panel-btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+}

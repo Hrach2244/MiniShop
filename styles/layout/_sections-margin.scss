@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+@use '../base/' as *;
+
+.sections-margin {
+    margin: map-get($spc, "h4") auto;
+
+    @include mq(phone) {
+        margin: map-get($spc, "h4");
+    }
+}
+
+// sections left and right margin
+.sections-margin-lr {
+    margin: 0 auto;
+}
+
+// sections top and down margin
+.sections-margin-td {
+    margin: map-get($spc, "h4") 0;
+
+    @include mq(phone) {
+        margin: crem(150px) 0;
+    }
+}

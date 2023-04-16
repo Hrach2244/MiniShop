@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+%grid-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: map-get($spc, "p2");
+}
+
+%grid-col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: map-get($spc, "p2");
+}
+
+%grid-col-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: map-get($spc, "p2");
+}

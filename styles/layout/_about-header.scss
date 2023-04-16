@@ -1,0 +1,84 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.about-header {
+    height: crem(600px);
+    position: relative;
+    
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: crem(23px);
+    }
+
+    &__info {
+        margin-left: map-get($spc, "h4");
+    }
+
+    &__title {
+        padding: crem(180px) 0 crem(40px) 0;
+    }
+
+    &__img {
+        width: crem(612px);
+        margin-left: map-get($spc, "p2");
+    }
+
+    @include mq(desktop) {
+        height: crem(550px);
+
+        &__title {
+            padding-top: crem(150px);
+        }
+        
+        &__img {
+            width: crem(490px);
+        }
+    }
+
+    @include mq(tablet) {
+        height: crem(480px);
+        margin-top: 0;
+
+        &__title {
+            padding-top: crem(120px);
+        }
+
+        &__img {
+            width: crem(400px);
+        }
+    }
+
+    @include mq(lgPhone) {
+        &__title {
+            padding-top: 100px;
+        }
+
+        &__img {
+            width: crem(330px);
+            transform: translateY(7%);
+        }
+    }
+
+    @include mq(phone) {
+        height: crem(400px);
+
+        &__info {
+            margin: 0;
+        }
+
+        &__title {
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__btn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

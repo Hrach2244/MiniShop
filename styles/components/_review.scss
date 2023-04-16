@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.review {
+    @extend %p1-tpg;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0.5em;
+    transform: translateX(-9%);
+}

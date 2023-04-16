@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.logo {
+    margin: cem(12px, map-get($tpg, "h4")) 0;
+
+    &__decor {
+        color: var(--basic-color);
+    }
+}

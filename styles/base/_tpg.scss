@@ -1,0 +1,54 @@
+@use "../abstracts/function" as *;
+
+$tpg: (
+    "h1": 83px,
+    "h2": 40px,
+    "h3": 34px,
+    "h4": 33px,
+    "h5": 30px,
+    "h6": 20px,
+    "p1": 18px,
+    "p2": 16px,
+    "p3": 14px,
+    "p4": 13px,
+);
+
+%h1-tpg {
+    font-size: clamp(4rem, 6vw, crem(map-get($tpg, "h1")));
+}
+
+%h2-tpg {
+    font-size: crem(map-get($tpg, "h2"));
+}
+
+%h3-tpg {
+    font-size: crem(map-get($tpg, "h3"));
+}
+
+%h4-tpg {
+    font-size: crem(map-get($tpg, "h4"));
+}
+
+%h5-tpg {
+    font-size: crem(map-get($tpg, "h5"));
+}
+
+%h6-tpg {
+    font-size: crem(map-get($tpg, "h6"));
+}
+
+%p1-tpg {
+    font-size: crem(map-get($tpg, "p1"));
+}
+
+%p2-tpg {
+    font-size: crem(map-get($tpg, "p2"));
+}
+
+%p3-tpg {
+    font-size: crem(map-get($tpg, "p3"));
+}
+
+%p4-tpg {
+    font-size: crem(map-get($tpg, "p4"));
+}

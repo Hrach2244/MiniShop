@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.nav-panel {
+    background-color: #171717;
+
+    &__link {
+        color: #d6d6d6;
+        font-family: 'Lato', sans-serif;
+        @extend %h6-tpg;
+        padding: crem(12px) crem(16px);
+        width: 100%;
+    }
+
+    &__link:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    &__shop-list {
+        i {
+            @extend %h6-tpg;
+        }
+
+        i:hover {
+            color: #000;
+        }
+    }
+
+    &-btn {
+        display: block;
+        color: #000;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 2.5rem;
+        padding: crem(8px) crem(16px);
+        transition: 0.3s;
+    }
+
+    &-btn:hover {
+        background-color: #ff2626;
+        color: #fff;
+    }
+}

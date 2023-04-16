@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.latest-posts {
+    &__header-info {
+        color: var(--basic-color-2);
+        @extend %p3-tpg;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: underline 2.5px #bebebe ;
+    }
+}
+
+.latest-posts-list {
+    &__desc {
+        color: #848484;
+        @extend %p4-tpg;
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        @extend %h6-tpg;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-family: 'Jost', sans-serif;  
+    }
+}

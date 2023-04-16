@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.features {
+    width: var(--sections-maxwidth);
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: crem(55px);
+    }
+
+    &__item {
+        width: 281px;
+    }
+
+    &__icon {
+        margin-right: crem(14px);
+    }
+
+    &__title {
+        margin-bottom: cem(4px, map-get($tpg, "h6"));
+    }
+
+    &__info {
+        margin-left: crem(44px);
+    }
+
+    @include mq(phone) {
+        &__list {
+            justify-content: flex-start;
+        }
+
+        &__item {
+            width: 100%;
+        }
+    }
+}

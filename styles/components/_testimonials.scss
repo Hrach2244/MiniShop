@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.testimonials {
+    &__content {
+        @extend %h3-tpg;
+        line-height: cem(47px, map-get($tpg, "h3"));
+        letter-spacing: 0.02em;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: #3A3A3A;
+        text-align: center;
+    }
+
+    @include mq(phone) {
+        &__content {
+            font-size: crem(28px);
+        }
+    }
+}

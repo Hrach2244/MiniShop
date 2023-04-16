@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header class="nav-section">
+        <div class="sections-margin-lr nav-section__content">
+            <h1 class="logo">
+                MiniStore
+                <span class="logo__decor">.</span>
+            </h1>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link btn btn--sm">HOME</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link btn btn--sm">
+                            PAGES
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link btn btn--sm">ABOUT</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link btn btn--sm">BLOGS</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link btn btn--sm">CONTACT</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__shop-tools-list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link shop-tools-list-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link shop-tools-list-btn">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link shop-tools-list-btn">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i> (0)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <input type="checkbox" id="popover" class="popover-input">
+        <div class="nav-panel">
+            <label for="popover" class="nav-panel__label"></label>
+
+            <div class="nav-panel__content">
+                <h2 class="logo">
+                    MiniStore
+                    <span class="logo__decor">.</span>
+                </h2>
+                
+                <ul class="nav-panel-list">
+                    <li class="nav-panel-list__item">
+                        <a href="#" class="nav-panel__link">HOME</a>
+                    </li>
+
+                    <li class="nav-panel-list__item">
+                        <a href="#" class="nav-panel__link">
+                            PAGES
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-panel-list__item">
+                        <a href="#" class="nav-panel__link">ABOUT</a>
+                    </li>
+
+                    <li class="nav-panel-list__item">
+                        <a href="#" class="nav-panel__link">BLOGS</a>
+                    </li>
+                    <li class="nav-panel-list__item">
+                        <a href="#" class="nav-panel__link">CONTACT</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__shop-tools-list nav-panel__shop-list">
+                    <li class="nav__item">
+                        <a href="#" class="nav-panel__link shop-tools-list-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav-panel__link shop-tools-list-btn">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav-panel__link shop-tools-list-btn">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i> (0)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <label for="popover" class="nav-panel-btn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+
+
+    <main class="main">
+        <header class="about-header">
+            <div class="about-header__content sections-margin-lr">
+                <div class="about-header__info">
+                    <h2 class="about-header__title ad-titles">
+                        Your Products
+                        <br>
+                        are great.
+                    </h2>
+
+                    <button type="button" class="btn about-header__btn">SHOP PRODUCT</button>
+                </div>
+
+                <img src="./img/main-smartwatch.png" alt="Smart-Watch" class="about-header__img">
+            </div>
+
+            <div class="left-right-chevrons">
+                <i class="fa-solid fa-chevron-left left-right-chevrons__left"></i>
+                <i class="fa-solid fa-chevron-right left-right-chevrons__right"></i>
+            </div>
+        </header>
+
+        <section class="features sections-margin">
+            <ul class=" features__list">
+                <li class="features__item">
+                    <h2 class="features__title">
+                        <i class="fa-solid fa-cart-shopping features__icon"></i>
+                        Free delivery
+                    </h2>
+
+                    <p class="features__info">
+                        Consectetur adipi elit lorem ipsum dolor sit amet.
+                    </p>
+                </li>
+
+                <li class="features__item">
+                    <h2 class="features__title">
+                        <i class="fa-solid fa-award features__icon"></i>
+                        Quality guarantee
+                    </h2>
+
+                    <p class="features__info">
+                        Dolor sit amet orem ipsu mcons ectetur adipi elit.
+                    </p>
+                </li>
+
+                <li class="features__item">
+                    <h2 class="features__title">
+                        <i class="fa-solid fa-pencil features__icon"></i>
+                        Daily offers
+                    </h2>
+
+                    <p class="features__info">
+                        Amet consectetur adipi elit loreme ipsum dolor sit.
+                    </p>
+                </li>
+
+                <li class="features__item">
+                    <h2 class="features__title">
+                        <i class="fa-solid fa-shield features__icon"></i>
+                        100% secure payment
+                    </h2>
+
+                    <p class="features__info">
+                        Rem Lopsum dolor sit amet, consectetur adipi elit.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mobile-products sections-margin">
+            <h2 class="title mobile-products__title">Mobile Products</h2>
+
+            <ul class="mobile-product-list">
+                <li class="mobile-product-list__item">
+                    <img src="./img/Iphone.png" alt="Phone 10" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Iphone 10
+                        <span class="mobile-product-list__value">$980</span>
+                    </p>
+                </li>
+
+                <li class="mobile-product-list__item">
+                    <img src="./img/iphone-2.png" alt="Phone 11" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Iphone 11
+                        <span class="mobile-product-list__value">$1100</span>
+                    </p>
+                </li>
+
+                <li class="mobile-product-list__item">
+                    <img src="./img/iphone-3.png" alt="Phone 8" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Iphone 8
+                        <span class="mobile-product-list__value">$780</span>
+                    </p>
+                </li>
+
+                <li class="mobile-product-list__item">
+                    <img src="./img/iphone-4.png" alt="Phone 13" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Iphone 13
+                        <span class="mobile-product-list__value">$1500</span>
+                    </p>
+                </li>
+            </ul>
+
+            <img src="./img/Slider.png" alt="Slider" class="mobile-products__slider">
+        </section>
+
+        <section class="mobile-products sections-margin">
+            <h2 class="title mobile-products__title">Smart Watches</h2>
+
+            <ul class="mobile-product-list">
+                <li class="mobile-product-list__item">
+                    <img src="./img/watch.png" alt="Pink Watch" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Pink Watch
+                        <span class="mobile-product-list__value">$870</span>
+                    </p>
+                </li>
+
+                <li class="mobile-product-list__item">
+                    <img src="./img/watch-2.png" alt="Heavy Watch" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Heavy Watch
+                        <span class="mobile-product-list__value">$680</span>
+                    </p>
+                </li>
+
+                <li class="mobile-product-list__item">
+                    <img src="./img/watch-3.png" alt="Spotted Watch" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Spotted Watch
+                        <span class="mobile-product-list__value">$750</span>
+                    </p>
+                </li>
+
+                <li class="mobile-product-list__item">
+                    <img src="./img/watch-4.png" alt="Black Watch" class="mobile-product-list__img">
+
+                    <p class="mobile-product-list__info">
+                        Black Watch
+                        <span class="mobile-product-list__value">$650</span>
+                    </p>
+                </li>
+            </ul>
+
+            <img src="./img/Slider.png" alt="Slider" class="mobile-products__slider">
+        </section>
+
+        <section class="ad-section sections-margin-td">
+            <div class="ad-section__content">
+                <p class="ad-section__info">
+                    <span class="ad-section__rectangle">
+                        <img src="./img/Rectangle-24.png" alt="Rectangle">
+                    </span>
+
+                    10% off
+                </p>
+
+                <h2 class="ad-titles ad-section__title">New year sale</h2>
+
+                <button type="button" class="btn">Shop Sale</button>
+            </div>
+
+            <img src="./img/ad-img.png" alt="Iphone" class="ad-section__img">
+        </section>
+
+        <section class="latest-posts sections-margin">
+            <header class="latest-posts__header">
+                <h2 class="title latest-posts__title">Latest Posts</h2>
+
+                <p class="latest-posts__header-info">READ BLOGS</p>
+            </header>
+
+            <ul class="latest-posts-list grid-col-3">
+                <li class="latest-posts-list__item">
+                    <img src="./img/ps.png" alt="Playstation" class="latest-posts-list__img">
+
+                    <p class="latest-posts-list__desc">feb 22, 2023 - Gadgets</p>
+
+                    <p class="latest-posts-list__info">Get some cool gadgets in 2023</p>
+                </li>
+
+                <li class="latest-posts-list__item">
+                    <img src="./img/airpods.png" alt="Airpods" class="latest-posts-list__img">
+
+                    <p class="latest-posts-list__desc">feb 22, 2023 - technology</p>
+
+                    <p class="latest-posts-list__info">TECHNOLOGY HACK YOU WON’T GET</p>
+                </li>
+
+                <li class="latest-posts-list__item">
+                    <img src="./img/cam.png" alt="Camera" class="latest-posts-list__img">
+
+                    <p class="latest-posts-list__desc">feb 22, 2023 - camera</p>
+
+                    <p class="latest-posts-list__info">toP 10 SMALL cAMERA IN THE WORLD</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="testimonials sections-margin">
+            <img src="./img/Vector.png" alt="Vector" class="testimonials__img">
+
+            <p class="testimonials__content">
+                “Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen
+                tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”
+            </p>
+
+            <div class="testimonials__review">
+                <img src="./img/Stars.png" alt="5 stars">
+                <p class="review ">Emma Chamberlin</p>
+            </div>
+
+            <div class="left-right-chevrons">
+                <i class="fa-solid fa-chevron-left left-right-chevrons__left"></i>
+                <i class="fa-solid fa-chevron-right left-right-chevrons__right"></i>
+            </div>
+        </section>
+
+        <section class="sections-margin subscribe">
+            <div class="subscribe__content">
+                <div class="subscribe__text">
+                    <h2 class="subscribe__title">Subscribe Us Now</h2>
+
+                    <p class="subscribe__info">Get latest news, updates and deals directly mailed to your inbox.</p>
+                </div>
+
+                <form action="https://backend.com" method="post" class="subscribe__form">
+                    <input type="email" name="email" placeholder="Your email address here" class="subscribe__input">
+
+                    <button type="submit" class="subscribe__btn sbs-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

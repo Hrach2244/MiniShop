@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+@use '../base/' as *;
+
+.subscribe {
+    width: var(--sections-maxwidth);
+    padding: crem(80px) crem(110px);
+
+    &__content {
+        display: flex;
+        gap: crem(10px);
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 45%;
+    }
+
+    &__form {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__input {
+        width: 60%;
+        padding: cem(15px, map-get($tpg, "p2")) cem(30px, map-get($tpg, "p2"));
+    }
+
+    &__btn {
+        width: 30%;
+        background-color: var(--basic-color);
+        padding: cem(15px, map-get($tpg, "p4")) cem(30px, map-get($tpg, "p2"));
+    }
+
+    @include mq(desktop) {
+        display: block;
+        padding-top: crem(70px);
+        padding-bottom: crem(70px);
+
+        &__text {
+            width: 100%;
+            text-align: center;
+            margin-bottom: crem(20px);
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+}
