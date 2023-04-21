@@ -20,4 +20,21 @@
     &__input {
         font: inherit;
     }
+
+    &__btn {
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    &__info {
+        line-height: 1.2;
+    }
+
+    @include mq(bigPhone) {
+        background-color: rgba(0, 0, 0, 0);
+
+        &__bgc {
+            background-color: #272727;
+        }
+    }
 }

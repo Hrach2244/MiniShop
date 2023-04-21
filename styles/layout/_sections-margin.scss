@@ -5,7 +5,7 @@
     margin: map-get($spc, "h4") auto;
 
     @include mq(bigPhone) {
-        margin: map-get($spc, "h4") crem(30px);
+        margin: map-get($spc, "h4") crem(50px);
     }
 }
 

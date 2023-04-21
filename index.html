@@ -76,7 +76,7 @@
                     MiniStore
                     <span class="logo__decor">.</span>
                 </h2>
-                
+
                 <ul class="nav-panel-list">
                     <li class="nav-panel-list__item">
                         <a href="#" class="nav-panel__link">HOME</a>
@@ -145,7 +145,7 @@
                 <img src="./img/main-smartwatch.png" alt="Smart-Watch" class="about-header__img">
             </div>
 
-            <div class="left-right-chevrons">
+            <div class="left-right-chevrons about-header__chevrons">
                 <i class="fa-solid fa-chevron-left left-right-chevrons__left"></i>
                 <i class="fa-solid fa-chevron-right left-right-chevrons__right"></i>
             </div>
@@ -358,7 +358,8 @@
             </div>
         </section>
 
-        <section class="sections-margin subscribe">
+        <section class="subscribe">
+            <div class="subscribe__bgc"></div>
             <div class="subscribe__content">
                 <div class="subscribe__text">
                     <h2 class="subscribe__title">Subscribe Us Now</h2>
@@ -367,7 +368,7 @@
                 </div>
 
                 <form action="https://backend.com" method="post" class="subscribe__form">
-                    <input type="email" name="email" placeholder="Your email address here" class="subscribe__input">
+                    <input type="email" name="email" placeholder="Your email address here" autocomplete="off" required class="subscribe__input">
 
                     <button type="submit" class="subscribe__btn sbs-btn">Subscribe</button>
                 </form>

@@ -13,7 +13,7 @@
     }
 
     &__item {
-        width: 281px;
+        width: 282px;
     }
 
     &__icon {
@@ -29,12 +29,19 @@
     }
 
     @include mq(bigPhone) {
+        width: fit-content;
+
         &__list {
-            justify-content: flex-start;
+            display: block;
         }
 
         &__item {
+            margin-bottom: crem(50px);
             width: 100%;
+        }
+
+        &__item:last-of-type {
+            margin-bottom: 0;
         }
     }
 }
