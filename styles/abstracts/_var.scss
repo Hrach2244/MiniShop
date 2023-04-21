@@ -2,7 +2,7 @@ $rem-size: 16px;
 
 $breakpoints: (
     // 845px
-    "phone": 52.8125em,
+    "bigPhone": 52.8125em,
     // 950px
     "lgPhone": 59.375em,
     // 1180px
@@ -15,5 +15,5 @@ $breakpoints: (
     --basic-color: #72AEC8;
     --basic-color-2: #272727;
     --ad-background: #EDF1F3;
-    --sections-maxwidth: 75vw;
+    --sections-maxwidth: clamp();
 }
