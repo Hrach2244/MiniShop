@@ -25,7 +25,7 @@
         display: inline-block;
     }
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         grid-template-columns: repeat(2, 1fr);
         gap: crem(50px);
     }

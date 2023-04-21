@@ -28,7 +28,7 @@
         margin-left: crem(44px);
     }
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         &__list {
             justify-content: flex-start;
         }

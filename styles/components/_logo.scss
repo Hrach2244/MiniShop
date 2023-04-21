@@ -7,7 +7,7 @@
     color: var(--basic-color-2);
 }
 
-@include mq(phone) {
+@include mq(bigPhone) {
     .logo {
         color: #fff;
         padding-left: 0.5em;

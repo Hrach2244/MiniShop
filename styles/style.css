@@ -79,7 +79,7 @@ a {
   --basic-color: #72AEC8;
   --basic-color-2: #272727;
   --ad-background: #EDF1F3;
-  --sections-maxwidth: 75vw;
+  --sections-maxwidth: clamp();
 }
 
 .left-right-chevrons__left, .left-right-chevrons__right, .ad-titles {

@@ -4,7 +4,7 @@
 .sections-margin {
     margin: map-get($spc, "h4") auto;
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         margin: map-get($spc, "h4");
     }
 }
@@ -18,7 +18,7 @@
 .sections-margin-td {
     margin: map-get($spc, "h4") 0;
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         margin: crem(150px) 0;
     }
 }

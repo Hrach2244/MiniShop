@@ -12,7 +12,7 @@
         text-align: center;
     }
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         &__content {
             font-size: crem(28px);
         }

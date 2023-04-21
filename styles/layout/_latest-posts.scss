@@ -14,7 +14,7 @@
         margin-bottom: 1em;
     }
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         &__header {
             justify-content: space-evenly;
         }
@@ -36,7 +36,7 @@
         margin: cem(14px, map-get($tpg, "p4")) 0 cem(6px, map-get($tpg, "p4")) 0;
     }
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         grid-template-columns: 1fr 1fr;
 
 

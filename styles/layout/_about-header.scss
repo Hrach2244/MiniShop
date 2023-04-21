@@ -60,7 +60,7 @@
         }
     }
 
-    @include mq(phone) {
+    @include mq(bigPhone) {
         height: crem(400px);
 
         &__info {
