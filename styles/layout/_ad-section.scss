@@ -22,20 +22,19 @@
     &__content {
         padding: crem(220px) 0;
         width: 44%;
-        margin-left: map-get($spc, "h2");
+        margin-left: map-get($spc, "h4");
     }
 
     &__img {
         display: inline-block;
         width: 700px;
-        aspect-ratio: 1.193;
         transform: translateY(8%);
     }
 
     @include mq(desktop) {
         &__content {
-            padding-top: 130px;
-            padding-bottom: 130px;
+            padding-top: crem(130px);
+            padding-bottom: crem(130px);
         }
 
         &__img {
@@ -45,8 +44,8 @@
 
     @include mq(tablet) {
         &__content {
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding-top: crem(100px);
+            padding-bottom: crem(100px);
         }
 
         &__img {
@@ -56,18 +55,26 @@
 
     @include mq(lgPhone) {
         &__content {
-            padding-top: 80px;
-            padding-bottom: 80px;
+            padding-top: crem(80px);
+            padding-bottom: crem(80px);
+        }
+    }
+
+    @include mq(bigPhone) {
+        &__content {
+            width: 100%;
+            padding-top: crem(55px);
+            padding-bottom: crem(55px);
         }
 
-        @include mq(bigPhone) {
-            &__content {
-                width: 100%;
-            }
+        &__img {
+            display: none;
+        }
+    }
 
-            &__img {
-                display: none;
-            }
+    @include mq(phone) {
+        &__content {
+            margin-left: crem(50px);
         }
     }
 }
