@@ -20,4 +20,23 @@
         top: 100%;
         transform: translateX(-50%);
     }
+
+    @include mq(bigPhone) {
+        max-width: fit-content;
+        padding: 0;
+
+        &__chevrons {
+            display: none;
+        }
+
+        &__img {
+            width: 50px;
+            position: static;
+            transform: none;
+        }
+
+        &__content {
+            display: inline-block;
+        }
+    }
 }

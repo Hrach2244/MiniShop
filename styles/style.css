@@ -329,7 +329,7 @@ a {
 }
 @media only screen and (max-width: 52.75em) {
   .sections-margin {
-    margin: 120px;
+    margin: 120px 1.875rem;
   }
 }
 
@@ -647,6 +647,23 @@ a {
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
+}
+@media only screen and (max-width: 52.75em) {
+  .testimonials {
+    max-width: fit-content;
+    padding: 0;
+  }
+  .testimonials__chevrons {
+    display: none;
+  }
+  .testimonials__img {
+    width: 50px;
+    position: static;
+    transform: none;
+  }
+  .testimonials__content {
+    display: inline-block;
+  }
 }
 
 .left-right-chevrons {
