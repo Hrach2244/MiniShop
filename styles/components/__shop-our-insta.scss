@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+
+.shop-our-insta {
+    &__title {
+        text-align: center;
+        margin: crem(30px) 0;
+    }
+}
+
+.insta-shop-list {
+    &__item:hover .insta-shop-filter {
+        opacity: 1;
+    }
+}
+
+.insta-shop-filter {
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__icon {
+        font-size: 2vw;
+        color: #fff;
+    }
+
+    @include mq(bigPhone) {
+        &__icon {
+            font-size: 5vw;
+        }
+    }
+}
