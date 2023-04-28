@@ -376,6 +376,11 @@ a {
     font-size: 5vw;
   }
 }
+@media only screen and (max-width: 27.4375em) {
+  .insta-shop-filter__icon {
+    font-size: 7vw;
+  }
+}
 
 .sections-margin {
   margin: 120px auto;
@@ -968,6 +973,14 @@ a {
   }
   .insta-shop-list__item:last-of-type {
     display: none;
+  }
+}
+@media only screen and (max-width: 27.4375em) {
+  .insta-shop-list {
+    grid-template-columns: 1fr;
+  }
+  .insta-shop-list__item {
+    width: 70%;
   }
 }
 

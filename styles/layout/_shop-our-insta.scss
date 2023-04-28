@@ -30,6 +30,14 @@
             display: none;
         }
     }
+
+    @include mq(xSmPhone) {
+        grid-template-columns: 1fr;
+
+        &__item {
+            width: 70%;
+        }
+    }
 }
 
 .insta-shop-filter {

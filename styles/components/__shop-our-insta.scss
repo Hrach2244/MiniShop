@@ -30,4 +30,10 @@
             font-size: 5vw;
         }
     }
+
+    @include mq(xSmPhone) {
+        &__icon {
+            font-size: 7vw;
+        }
+    }
 }
