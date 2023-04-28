@@ -17,4 +17,15 @@
             font-size: crem(28px);
         }
     }
+
+    @include mq(xSmPhone) {
+        &__content {
+            font-size: crem(25px);
+        }
+
+        &__review-p {
+            text-align: center;
+            font-size: crem(18px);
+        }
+    }
 }

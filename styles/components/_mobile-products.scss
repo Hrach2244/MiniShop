@@ -12,4 +12,10 @@
     &__value {
         color: var(--basic-color);
     }
+
+    @include mq(xSmPhone) {
+        &__info {
+            text-align: center;
+        }
+    }
 }

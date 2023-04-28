@@ -85,4 +85,16 @@
             display: none;
         }
     }
+
+    @include mq(smPhone) {
+        height: fit-content;
+
+        &__title {
+            padding-top: crem(40px);
+        }
+
+        &__btn {
+            margin-bottom: crem(55px);
+        }
+    }
 }

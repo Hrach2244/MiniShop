@@ -47,6 +47,19 @@
             width: 90%;
         }
     }
+
+    @include mq(xSmPhone) {
+        grid-template-columns: 1fr;
+        
+        &__item {
+            width: 65%;
+            margin-top: crem(10px);
+        }
+
+        &__info {
+            display: block;
+        }
+    }
 }
 
 .mobile-products {
@@ -56,5 +69,11 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    @include mq(xSmPhone) {
+        &__slider {
+            display: none;
+        }
     }
 }

@@ -85,4 +85,11 @@
             width: 100%;
         }
     }
+
+    @include mq(xSmPhone) {
+        &__input {
+            padding-left: crem(15px);
+            padding-right: crem(15px);
+        }
+    }
 }
